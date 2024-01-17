@@ -47,6 +47,10 @@ float division(float operand_1,float operand_2){
     return(operand_1/operand_2);
 
 }
+float square(float operand_1){
+    return operand_1*operand_1;
+}
+    
 
 
 // The code you provided is the main method in Java. The main method is the entry point of a Java
@@ -63,5 +67,9 @@ public static void main(String[] args){
     System.out.println("result"+multi_res);
     float div_res=c.division(operand_1, operand_2);
     System.out.println("result"+div_res);
+    float squ_res=c.square(operand_1);
+    System.out.println("square" +squ_res);
+
+
 }
 }   
