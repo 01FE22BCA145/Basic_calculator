@@ -2,7 +2,8 @@
  * The calculator class in Java performs basic arithmetic operations such as addition, subtraction,
  * multiplication, and division.
  */
-class calculator{
+
+class calculator extends arthemetic{
     /**
      * The function "addition" takes two float operands and returns their sum.
      * 
@@ -12,7 +13,7 @@ class calculator{
      */
     float addition (float operand_1,float operand_2){
         return(operand_1+operand_2);
-
+        
     }
     /**
      * The function "subtraction" takes two float operands and returns their difference.
@@ -48,9 +49,10 @@ float division(float operand_1,float operand_2){
 
 }
 float square(float operand_1){
-    return operand_1*operand_1;
+    return (operand_1*operand_1);
 }
-    
+
+
 
 
 // The code you provided is the main method in Java. The main method is the entry point of a Java
@@ -69,6 +71,14 @@ public static void main(String[] args){
     System.out.println("result"+div_res);
     float squ_res=c.square(operand_1);
     System.out.println("square" +squ_res);
+    float square=c.square(operand_1);
+    System.out.println("square"+ square);
+    float cube=c.cube(operand_1);
+    System.out.println("cube"+ cube);
+    float modulas=c.modulas(operand_1,operand_2);
+    System.out.println("modulas"+ modulas);
+    
+
 
 
 }
